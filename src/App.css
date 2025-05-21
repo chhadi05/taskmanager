@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1c1f26, #2c2f3a);
+  color: #f5f7fa;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f7fa;
+  margin: 0 15px;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  color: #e0e6ed;
+  text-align: center;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Home Page Styles */
+.home-page {
+  text-align: center;
+  background: linear-gradient(135deg, #1c1f26, #2c2f3a);
+  color: #f5f7fa;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.status-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px;
+  background: linear-gradient(135deg, #2a2d37, #3c3f4d);
+  border: 1px solid #3a3d48;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+  color: #e0e6ed;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #adb3c1;
+  font-size: 16px;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6a85b6, #bac8e0);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Task List Styles */
+.task-list table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: #2a2d37;
+  color: #f5f7fa;
+  border: 1px solid #3a3d48;
+  border-radius: 8px;
+}
+
+.task-list th,
+.task-list td {
+  padding: 10px;
+  border: 1px solid #3c3f4d;
+}
+
+.task-list th {
+  background: #3a3d48;
+  color: #e0e6ed;
+}
+
+.task-list td {
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background: #2a2d37;
+  padding: 20px;
+  border: 1px solid #3a3d48;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+form input,
+form select,
+form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #3c3f4d;
+  color: #e0e6ed;
+  border: 1px solid #3a3d48;
+  border-radius: 5px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #6a85b6;
+}
+
+button {
+  background-color: #6a85b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #536a9e;
+}
+
